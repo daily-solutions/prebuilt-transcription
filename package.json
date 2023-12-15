@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@daily-co/daily-js": "0.23.0",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-virtualized-auto-sizer": "^1.0.6",
-    "react-window": "^1.8.6"
+    "@daily-co/daily-js": "0.55.1",
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-virtualized-auto-sizer": "^1.0.20",
+    "react-window": "^1.8.10"
   },
   "devDependencies": {
     "@types/node": "17.0.21",

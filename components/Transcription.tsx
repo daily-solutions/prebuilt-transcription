@@ -23,7 +23,10 @@ const Transcription = ({ callFrame, isTranscribing, newMsg, owner }: Props) => {
   */
 
   async function startTranscription() {
-    callFrame?.startTranscription();
+    callFrame?.startTranscription({
+      language: 'en',
+      model: 'nova-2-medical',
+    });
   }
 
   async function stopTranscription() {

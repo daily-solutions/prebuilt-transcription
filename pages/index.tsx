@@ -34,7 +34,7 @@ function Form() {
       ) : (
         <div className={styles.linkGroup}>
           <Link href={link}>
-            <a>{link}</a>
+            {link}
           </Link>
           <div>
             <a

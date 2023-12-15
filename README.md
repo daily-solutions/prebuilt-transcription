@@ -2,9 +2,6 @@
 
 [Daily Prebuilt](https://daily.co/prebuilt) embedded into a [Next.js](https://nextjs.org/) app with live transcription.
 
-You can check out the live demo [here](https://prebuilt-transcription.vercel.app). Use the following URL path pattern to test with your Daily domain and room: `https://prebuilt-transcription.vercel.app/your-domain/your-room-name-here`
-
-To join as owner, pass in `?t=TOKEN` to the end of your URL.
 
 ![Live demonstration of transcribing video call audio](example.gif)
 
@@ -12,9 +9,9 @@ To join as owner, pass in `?t=TOKEN` to the end of your URL.
 
 To use this demo, you will first need to [create a Daily account](https://dashboard.daily.co/signup) and a [Deepgram account](https://console.deepgram.com/signup). Once you have an account and are logged into the [Daily Dashboard](https://dashboard.daily.co), you can [create a new Daily room](https://dashboard.daily.co/rooms/create) or use our [REST API](https://docs.daily.co/reference/rest-api/rooms).
 
-To set up transcription, you will have to [`enable_transcription` on your Daily domain](https://docs.daily.co/reference/rest-api/your-domain/config#enable_transcription). For a full tutorial on setting up transcription, see our blog post, [Add live transcription to a Daily call with our newest API](https://www.daily.co/blog/add-live-transcription-to-a-daily-call-with-our-newest-api/).
+Transcription is a pay-as-you-go feature on Daily, so ensure you have a  card on file on your Daily account. By default, Daily handles billing for transcription.
 
-In short, you'll need your Daily API key available in the [Daily dashboard](https://dashboard.daily.co/developers) and your [Deepgram API key](https://console.deepgram.com/) to update your domain settings, like so:
+If you want to use a Deepgram API key instead (which means billing will be handled via Deepgram instead of Daily), you can set [`enable_transcription` on your Daily domain](https://docs.daily.co/reference/rest-api/your-domain/config#enable_transcription) with your [Deepgram API key](https://console.deepgram.com/) on your domain, like so:
 
 ```bash
 curl --request POST \
